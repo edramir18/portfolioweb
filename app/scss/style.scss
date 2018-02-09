@@ -1,9 +1,4 @@
-$color: red;
-
-body {
-    background-color: $color;
-    color: silver;
-}
-p {
-    display: flex;
-}
+@import 'variables';
+@import 'mixin';
+@import 'base';
+@import 'main';

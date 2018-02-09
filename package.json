@@ -1,13 +1,17 @@
 {
-  "name": "gulptest",
-  "version": "1.0.0",
-  "description": "",
+  "name": "portfolioweb",
+  "version": "0.0.1",
+  "description": "Portfolio Web Source for the github page",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "js",
+    "html",
+    "sass"
+  ],
+  "author": "Eduardo Ramirez",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.23.5",

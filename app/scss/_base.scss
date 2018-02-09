@@ -1,0 +1,22 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 12px;
+  line-height: 1.5;
+  @include tablet {
+    font-size: 14px;    
+  }
+  @include desktop {
+    font-size: 16px;
+  }
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $text-color;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
