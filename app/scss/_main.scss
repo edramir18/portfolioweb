@@ -4,11 +4,11 @@
   height: 100vh;  
   grid-template-rows: 3em 1fr 2em;
   grid-template-columns: 1fr;
-  padding: 0 2vh;
+  padding: 1vh 2vh 0;
   @include tablet {
-    padding: 0 5vh;
+    padding: 2vh 5vh 0;
   }
   @include desktop {
-    padding: 0 8vh;
+    padding: 3vh 12vh 0;
   }
 }

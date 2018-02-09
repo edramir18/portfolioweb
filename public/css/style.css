@@ -9,7 +9,7 @@ html {
   line-height: 1.5;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
   html {
     font-size: 14px;
   }
@@ -26,8 +26,28 @@ body {
   color: #333333;
 }
 
-h1 {
+a, a:visited {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  font-size: 2.618em;
+}
+
+h3 {
+  font-size: 1.618em;
+}
+
+h4 {
+  font-size: 4.236em;
+}
+
+small {
+  font-size: .65em;
 }
 
 .main {
@@ -36,17 +56,110 @@ h1 {
   height: 100vh;
   grid-template-rows: 3em 1fr 2em;
   grid-template-columns: 1fr;
-  padding: 0 2vh;
+  padding: 1vh 2vh 0;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
   .main {
-    padding: 0 5vh;
+    padding: 2vh 5vh 0;
   }
 }
 
 @media (min-width: 1024px) {
   .main {
-    padding: 0 8vh;
+    padding: 3vh 12vh 0;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__toolbar {
+  font-size: 1.618em;
+}
+
+.btn {
+  display: inline-block;
+  color: #333333;
+  width: 2em;
+  text-align: center;
+  border: 0.1em solid #333333;
+  border-radius: .3em .5em;
+  transition: .4s;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 2px black;
+}
+
+.profile {
+  display: grid;
+  grid-template-rows: 8em 1fr;
+  grid-template-columns: 1fr;
+  margin: 1em 0;
+  padding: 0 1em;
+  width: 100%;
+  height: 75%;
+  color: white;
+  background-color: #555555;
+  border-radius: 2em;
+}
+
+.profile.-vanished {
+  animation: vanish 1s ease;
+}
+
+.profile__btn {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 0.25em 1em;
+  border: 0.2em solid white;
+  border-radius: .5em;
+  transition: background-color .4s;
+}
+
+.profile__btn:hover, .profile__btn:active {
+  cursor: pointer;
+  color: #333333;
+  background-color: white;
+}
+
+h5 {
+  font-size: 3.2em;
+  line-height: 1.5;
+}
+
+h6 {
+  position: relative;
+  top: -0.5em;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+@keyframes vanish {
+  to {
+    opacity: 0;
+  }
+}
+
+.portfolio {
+  background-color: salmon;
+  opacity: 1;
+}
+
+.portfolio.-is-showed {
+  animation: testing_animation .4s ease;
+}
+
+@keyframes testing_animation {
+  from {
+    opacity: 0;
   }
 }

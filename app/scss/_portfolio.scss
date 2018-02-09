@@ -1,0 +1,12 @@
+.portfolio {
+  background-color: salmon;
+  opacity: 1;
+  &.-is-showed {
+    animation: testing_animation .4s ease;
+  }
+}
+@keyframes testing_animation {
+  from {
+    opacity: 0;
+  }
+}

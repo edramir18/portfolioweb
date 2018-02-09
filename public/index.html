@@ -2,25 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edramir18 - Portafolio Web</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:700" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Edramir18 - Portafolio Web</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:700" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="main">
-        <header>
-            <h1>Portafolio Web</h1>
-        </header>
-        <main>
-            <p>Contenido</p>
-        </main>
-        <footer>&copy;2018 Eduardo Ramirez</footer>
+  <div class="main">
+    <header class="header">
+      <h1>Portafolio Web</h1>
+      <div class="header__toolbar">
+        <a class="btn" href="https://www.linkedin.com/in/eduardo-ramirez-072679b4/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a class="btn" href="https://github.com/edramir18" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="profile" id="profile">
+        <div class="profile__title">
+          <h5>Eduardo Ramirez</h5>
+          <h6>Sysadmin / Desarrollador Web</h6>
+          <div class="profile__toolbar">
+            <button class="profile__btn" id="btn_portfolio">Portafolio</button>
+          </div>
+        </div>
+        <div class="profile__text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorem quae debitis repellendus amet, explicabo
+            odio excepturi ducimus alias non officiis quos perspiciatis ad error nemo eveniet consequatur maxime tempore?</p>
+        </div>
+      </div>
+    </main>
+    <footer>&copy;2018 Eduardo Ramirez</footer>
+  </div>
+  <template id="portfolio">
+    <div class="portfolio">
+      <h1>PRUEBA</h1>
     </div>
-    <script src="js/index.js"></script>
+  </template>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

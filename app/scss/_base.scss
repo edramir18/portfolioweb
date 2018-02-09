@@ -17,6 +17,21 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: $text-color;
 }
-h1 {
+a, a:visited {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
   font-family: 'Roboto', sans-serif;
+}
+h1, h2 {
+  font-size: $text-size3;
+}
+h3 {
+  font-size: $text-size4;
+}
+h4 {
+  font-size: $text-size2;
+}
+small {
+  font-size: .65em;
 }

@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__toolbar {
+    font-size: $text-size4;
+  }
+}
+.btn {
+  display: inline-block;
+  color: $text-color;
+  width: 2em;
+  text-align: center;
+  border: .1em solid $text-color;
+  border-radius: .3em .5em;
+  transition: .4s;
+  &:hover {
+    //border-radius: .5em .3em;
+    ///transform: scale(1.01);
+    box-shadow: 1px 1px 2px black;
+  }
+}
