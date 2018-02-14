@@ -1,12 +1,40 @@
 .portfolio {
-  background-color: salmon;
-  opacity: 1;
-  &.-is-showed {
-    animation: testing_animation .4s ease;
+  margin: 2em 1em 0;
+  // background-color: navajowhite;
+  &__article{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.4em 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: .5em;
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include desktop {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  &__header {
+    grid-column: 1;
+    border-bottom: .2em solid $text-color;
+    @include tablet {
+      grid-column: 1/3;
+    }
+    @include desktop {
+      grid-column: 1/4;
+    }   
   }
 }
-@keyframes testing_animation {
-  from {
-    opacity: 0;
+.project {
+  background-color: #bbbbbb;
+  text-align: center;
+  border-radius: .5em;
+  &__title {
+    font-size: 1.6em;
+  }
+  &__img{
+    padding: 0.5em;
+    width: 100%;
+    height: auto;
   }
 }

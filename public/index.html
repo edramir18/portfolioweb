@@ -12,38 +12,45 @@
 </head>
 
 <body>
-  <div class="main">
-    <header class="header">
-      <h1>Portafolio Web</h1>
-      <div class="header__toolbar">
-        <a class="btn" href="https://www.linkedin.com/in/eduardo-ramirez-072679b4/" target="_blank">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a class="btn" href="https://github.com/edramir18" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </header>
-    <main>
-      <div class="profile" id="profile">
-        <div class="profile__title">
-          <h5>Eduardo Ramirez</h5>
-          <h6>Sysadmin / Desarrollador Web</h6>
-          <div class="profile__toolbar">
-            <button class="profile__btn" id="btn_portfolio">Portafolio</button>
-          </div>
-        </div>
-        <div class="profile__text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorem quae debitis repellendus amet, explicabo
-            odio excepturi ducimus alias non officiis quos perspiciatis ad error nemo eveniet consequatur maxime tempore?</p>
+  <header class="header">
+    <h1>Portafolio Web</h1>
+    <div class="header__toolbar">
+      <a class="btn" href="https://www.linkedin.com/in/eduardo-ramirez-072679b4/" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a class="btn" href="https://github.com/edramir18" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </header>
+  <main class="main">
+    <div class="profile" id="profile">
+      <div class="profile__title">
+        <h5>Eduardo Ramirez</h5>
+        <h6>SYSAdmin / Desarrollador Web</h6>
+        <div class="profile__toolbar">
+          <a class="profile__btn" id="btn_portfolio" href="#portfolio">Portafolio</a>
         </div>
       </div>
-    </main>
-    <footer>&copy;2018 Eduardo Ramirez</footer>
-  </div>
-  <template id="portfolio">
-    <div class="portfolio">
-      <h1>PRUEBA</h1>
+      <div class="profile__text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorem quae debitis repellendus amet, explicabo
+          odio excepturi ducimus alias non officiis quos perspiciatis ad error nemo eveniet consequatur maxime tempore?</p>
+      </div>        
+    </div>
+    <section id="portfolio" class="portfolio">
+      <article id="pr_html" class="portfolio__article">
+        <header class="portfolio__header"><h3>HTML / CSS / JS</h3></header>
+      </article>
+      <article id="pr_nodejs" class="portfolio__article">
+          <header class="portfolio__header"><h3>NodeJS / MongoDB</h3></header>
+        </article
+    </section>
+  </main>
+  <footer class="footer">&copy;2018 Eduardo Ramirez</footer>
+  <template id="project">
+    <div class="project">
+      <h4 class="project__title">PRUEBA</h4>
+      <a class="project__link" href="http://" target="_blank"><img class="project__img" src="" alt=""></a>
     </div>
   </template>
   <script src="js/index.js"></script>

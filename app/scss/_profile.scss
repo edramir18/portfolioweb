@@ -1,21 +1,13 @@
 .profile {
   display: grid;
   grid-template-rows: 8em 1fr;
-  grid-template-columns: 1fr;  
-  margin: 1em 0;
+  grid-template-columns: 1fr;
+  margin: 0 1em;
   padding: 0 1em;
-  width: 100%;
-  height: 75%;
+  height: 20em;
   color: white;
   background-color: #555555;
   border-radius: 2em;
-  &.-vanished {
-    animation: vanish 1s ease;
-  }
-  &__title {
-  }
-  &__toolbar{    
-  }
   &__btn {
     position: relative;
     color: white; 
@@ -32,8 +24,6 @@
       color: $text-color;
       background-color: white;
     }
-  }
-  &__text {
   }
 }
 h5 {

@@ -1,0 +1,34 @@
+{
+  "plainhtml": [
+    {
+      "title": "Twitch Streamers",
+      "img":  "img/twitch.png",
+      "url": "https://codepen.io/edramir18/full/qxWQyX"
+    },
+    {
+      "title": "Wiki Search API",
+      "img":  "img/wikipedia.png",
+      "url": "https://codepen.io/edramir18/full/ypqMKE"
+    },
+    {
+      "title": "Random Quote Machine",
+      "img":  "img/randomquote.png",
+      "url": "https://codepen.io/edramir18/full/wpyrOz"
+    },
+    {
+      "title": "Weather API",
+      "img":  "img/weather.png",
+      "url": "https://codepen.io/edramir18/full/ypqMKE"
+    },
+    {
+      "title": "Javascript Clock",
+      "img":  "img/jsclock.png",
+      "url": "https://codepen.io/edramir18/full/vpVyKL"
+    },
+    {
+      "title": "Javascript Digital Clock",
+      "img":  "img/jsdigitalclock.png",
+      "url": "https://codepen.io/edramir18/full/aEPRQX"
+    }
+  ]
+}
