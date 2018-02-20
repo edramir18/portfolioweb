@@ -10,7 +10,6 @@ function loadTemplate (templateSelector, targetSelector, data) {
   node.querySelector('a').setAttribute('href', data.url)
   node.querySelector('img').setAttribute('src', data.img)
   target.appendChild(node)
-  console.log(target, node)
 }
 function fecthJSON (url) {
   return fetch(url).then(response => {

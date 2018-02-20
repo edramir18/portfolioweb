@@ -1,13 +1,32 @@
 .profile {
-  display: grid;
-  grid-template-rows: 8em 1fr;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 1em;
   padding: 0 1em;
-  height: 20em;
+  width: auto;
+  min-height: 75vh;
   color: white;
   background-color: #555555;
   border-radius: 2em;
+  &__title {
+    display: inline-block;
+    width: 500px;
+    margin-left: 2em;    
+  }
+  &__description {
+    display: inline-block;
+    width: 500px;
+    &>article>ul{
+      list-style: none;
+      margin-left: 2em;
+    }
+  }
+  &__toolbar{
+    margin: 1em 0;
+  }
   &__btn {
     position: relative;
     color: white; 
